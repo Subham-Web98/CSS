@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Example</title>
+    <style>
+      .container {
+        display: grid;
+        text-align: center;
+        color: aliceblue;
+        grid-template-rows: 0.2fr 1fr 1fr 0.3fr;
+        grid-template-columns: 1fr 1fr 1fr 0.5fr 0.2fr;
+        grid-template-areas:
+          " Navbar Navbar Navbar Navbar Navbar"
+          "main main main sidebar sidebar"
+          "content1 content2 content3 sidebar sidebar"
+          "footer footer footer footer footer";
+          height: 100vh;
+          padding: 20px;
+          margin: 10px;
+          gap: 10px;
+          background-color: rgb(142, 142, 224);
+          border-radius: 10px;
+
+          
+
+      }
+      nav {
+        background-color: #4e4c4c;
+        grid-area: Navbar;
+        border-radius: 5px;
+      }
+      main {
+        background-color: rgb(3, 180, 121);
+        grid-area: main;
+        border-radius: 5px;
+
+      }
+      .Sidebar {
+        background-color: rgb(89, 89, 155);
+        grid-area: sidebar;
+        border-radius: 5px;
+
+      }
+      .content1 {
+        background-color: rgb(254, 106, 106);
+        grid-area: content1;
+        border-radius: 5px;
+
+      }
+      .content2 {
+        background-color: rgb(130, 63, 63);
+        grid-area: content2;
+        border-radius: 5px;
+
+      }
+      .content3 {
+        background-color: rgb(220, 162, 162);
+        grid-area: content3;
+        border-radius: 5px;
+
+      }
+      footer {
+        background-color: #333030;
+        grid-area: footer;
+        border-radius: 5px;
+
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>Navbar</nav>
+      <main>Main</main>
+      <div class="Sidebar">SideBar</div>
+      <div class="content1">Content1</div>
+      <div class="content2">Content2</div>
+      <div class="content3">Content3</div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

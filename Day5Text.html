@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text in CSS</title>
+    <style>
+      .text {
+        height: 550px;
+        width: 300px;
+        background-color: #0b0b0b;
+        color: #fbfafa;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+      p {
+        border: 2px solid red;
+      }
+      .a {
+        text-align: center;
+      }
+      .b {
+        text-align: right;
+      }
+      .c {
+        text-align: justify;
+      }
+      .d {
+        text-align-last: right;
+      }
+      .e {
+        text-align-last: center;
+      }
+
+      .decoration {
+        margin: 60px;
+        text-decoration-line: line-through underline overline;
+        text-decoration-color: red;
+      }
+      .textDeco {
+        margin: 60px;
+        text-decoration-line: underline;
+        text-decoration-color: brown;
+        text-decoration-style: wavy;
+      }
+      .textDeco1 {
+        margin: 60px;
+        text-decoration-line: underline;
+        text-decoration-color: brown;
+        text-decoration-style: dashed;
+      }
+      .textDeco2 {
+        margin: 60px;
+        text-decoration-line: line-through;
+        text-decoration-color: rgb(203, 231, 26);
+        text-decoration-style: double;
+      }
+      .textDeco3 {
+        margin: 60px;
+        text-decoration-line: overline;
+        text-decoration-color: brown;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 10px;
+      }
+      .textDeco4 {
+        margin: 60px;
+        text-decoration: line-through red dotted 5px;
+      }
+      .textDeco5 {
+        margin: 60px;
+        text-decoration: underline red wavy 5px;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 30px;
+      }
+      .transform {
+        margin: 60px;
+        height: 300px;
+        width: 150px;
+        text-transform: capitalize;
+        /* letter-spacing: 10px; */
+        line-height: 50px;
+        border: 5px solid green;
+        overflow-x: scroll;
+        
+      }
+      .shadow{
+        margin: 60px;
+        /* text-shadow: 2px 3px 2px red , 3px 3px 2px blue ,5px 5px 1px green; */
+        text-shadow: 0 0 10px greenyellow;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text in CSS</h1>
+    <div class="text">
+      <p class="a">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aut,
+        voluptas assumenda quam omnis eum.
+      </p>
+      <p class="b">
+        Minima eum aliquam cum deleniti soluta earum consectetur dolore
+        molestiae. Debitis dignissimos omnis esse libero?
+      </p>
+      <p class="c">
+        Quia eius ipsam quaerat aspernatur atque consectetur aliquam. Veritatis,
+        totam ratione ea explicabo consectetur fugit?
+      </p>
+      <p class="d">
+        Eaque commodi, ipsum laboriosam a atque sed excepturi laudantium, minus
+        fugiat suscipit porro ipsa recusandae.
+      </p>
+      <p class="e">
+        Obcaecati expedita odit repellat deserunt natus quos eaque accusamus,
+        magni aliquid et eveniet deleniti. Animi!
+      </p>
+    </div>
+
+    <div class="decoration">
+      <h2>Hi,developers</h2>
+    </div>
+    <h2 class="textDeco">Text Decoration</h2>
+    <h2 class="textDeco1">Text Decoration</h2>
+    <h2 class="textDeco2">Text Decoration</h2>
+    <h2 class="textDeco3">Text Decoration</h2>
+    <h2 class="textDeco4">Text Decoration all in</h2>
+    <h2 class="textDeco5">dog, By ,join</h2>
+    <div class="transform">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel reiciendis illum sunt repudiandae perferendis aliquam cumque veritatis optio placeat animi!
+    </div>
+    <div class="shadow">  <h3>Text-Shadow</h3></div>
+  </body>
+</html>

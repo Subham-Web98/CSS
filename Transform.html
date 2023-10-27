@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform in CSS</title>
+    <style>
+      .trans_translate {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(244, 124, 33);
+        margin: 50px;
+        padding: 50px;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.3rem;
+        /* transform: translate(100px ,100px); */
+        /* transform: translateX(500px); */
+        /* transform: translateY(500px); */
+      }
+      .rotate {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        margin: 50px;
+        padding: 50px;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        border-radius: 15px;
+        /* transform: rotate(45deg); */
+        /* transform: rotateX(45deg); */
+        /* transform: rotateY(45deg); */
+        transform: rotateZ(5deg);
+      }
+      .scale {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(137, 14, 14);
+        margin: 50px;
+        padding: 50px;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        border-radius: 0.4em;
+        /* transform: scale(1.5); */
+        /* transform: scale(3,1); */
+        transform: skew(15deg);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="trans_translate">Div</div>
+    <div class="rotate">Rotate The Div</div><br>
+    <div class="scale">Scale The Div</div>
+  </body>
+</html>

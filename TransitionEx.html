@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Example</title>
+    <style>
+        h1{
+            font-size: 4em;
+            font-style: italic;
+            text-shadow: 5px 2px 5px red;
+        }
+      .countainer {
+        height: 100vh;
+        width: 100vh;
+        transition: all 2s;
+        display: inline-block;
+      }
+
+      .box1,
+      .box2,
+      .box3,
+      .box5,
+      .box4,
+      .box6 {
+        height: 50px;
+        width: 100px;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        /* border: 2px solid rgb(84, 82, 82); */
+        transition-timing-function: ease-in;
+      }
+      .box1 {
+        background-color: #f08922;
+        transition: width 3s;
+        transition-timing-function: ease-in;
+
+      }
+      .box2 {
+        background-color: #1d7af3;
+        transition: width 3s;
+        transition-timing-function: ease;
+
+      }
+      .box3 {
+        background-color: #f4e32d;
+        transition: width 3s;
+        transition-timing-function: ease-in-out;
+
+      }
+      .box4 {
+        background-color: #22edf0;
+        transition: width 3s;
+        transition-timing-function: linear;
+
+      }
+      .box5 {
+        background-color: #2a9211;
+        transition: width 3s;
+        transition-timing-function: ease-out;
+
+      }
+      .box6 {
+        background-color: #6dd81b;
+        transition: width 3s;
+        transition-timing-function: ease-in;
+
+      }
+
+      .countainer:hover .box1 {
+        width: 300px;
+        box-shadow: 2px 3px 10px black;
+        font-weight: bolder;
+        text-shadow: 2px 0px 2px #f6f3f3;
+      }
+      .countainer:hover .box2 {
+        width: 500px;
+        box-shadow: 2px 3px 10px black;
+        font-weight: bolder;
+        text-shadow: 2px 0px 2px #f6f3f3;
+      }
+      .countainer:hover .box3 {
+        width: 100vw;
+        box-shadow: 2px 3px 10px black;
+        font-weight: bolder;
+        text-shadow: 2px 1px 2px #ff0000;
+        font-size: 1.4em;
+        
+      }
+      .countainer:hover .box4 {
+        width: 750px;
+        box-shadow: 2px 3px 10px black;
+        font-weight: bolder;
+        text-shadow: 2px 0px 2px #f6f3f3;
+      }
+      .countainer:hover .box5 {
+        width: 500px;
+        box-shadow: 2px 3px 10px black;
+        font-weight: bolder;
+        text-shadow: 2px 0px 2px #f6f3f3;
+      }
+      .countainer:hover .box6 {
+        width: 350px;
+        box-shadow: 2px 3px 10px black;
+        font-weight: bolder;
+        text-shadow: 2px 0px 2px #f6f3f3;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Web Development</h1>
+    <div class="countainer">
+      <div class="box1" id="box">Html</div>
+      <div class="box2" id="box">CSS</div>
+      <div class="box3" id="box">JavaScript</div>
+      <div class="box4" id="box">React</div>
+      <div class="box5" id="box">NodeJs</div>
+      <div class="box6" id="box">MongoDB</div>
+    </div>
+  </body>
+</html>

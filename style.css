@@ -1,0 +1,29 @@
+body{
+    background-color: dimgrey;
+}
+  h1 {
+    color: #000000;
+    background-color: #ffff00;
+    text-align: center;
+    border-radius: 40px;
+    border: 5px solid #0000ff;
+    padding: 10px;
+    margin: 30px;
+    font-size: 50px;
+    box-shadow: 0 0 50px #0000ff;
+  }
+
+  div,
+  p,
+  section {
+    background-color: #ffff00;
+    color: #000000;
+  }
+  .class {
+    background-color: rebeccapurple;
+    color: #000000;
+  }
+  #id {
+    background-color: tomato;
+    color: #040466;
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Animation</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .grid{
+            display: grid;
+            height: 100vh;
+            background-color: rgb(182, 65, 65);
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.3rem;
+            transition: 3s;
+        }
+        :where(.first,.Second,.third){
+            background-color: rgb(248, 154, 154);
+        }
+        :where(.first,.Second,.third):hover{
+            background-color: rgb(145, 249, 122);
+        }
+        .grid:has(.first:hover){
+            grid-template-columns: 2fr 0.8fr 0.8fr;
+        }
+        .grid:has(.Second:hover){
+            grid-template-columns:  0.8fr 2fr 0.8fr;
+        }
+        .grid:has(.third:hover){
+            grid-template-columns:  0.8fr 0.8fr 2fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="first"></div>
+        <div class="Second"></div>
+        <div class="third"></div>
+    </div>
+</body>
+</html>

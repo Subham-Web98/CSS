@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psedudo Class and Element</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: #ef9696;
+      }
+      div:hover {
+        background-color: red;
+        border-radius: 50%;
+      }
+      h3:hover {
+        display: none;
+      }
+      a:hover {
+        color: red;
+        text-decoration: none;
+        font-weight: bolder;
+      }
+      a:link {
+        color: chartreuse;
+        font-size: 2em;
+      }
+      a:active {
+        color: darkblue;
+        font-size: 4em;
+      }
+      a:visited {
+        font-size: 0.2em;
+      }
+
+      h2::before{
+        content: "My name is ";
+        color: blue;
+      }
+      h2::after{
+        content: " Mallick";
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Psedudo Class and Element</h1>
+    <div></div>
+    <h3>Subham Mallick</h3>
+    <a href="#">Touch Me </a>
+    <h2>Subham</h2>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid in CSS</title>
+    <style>
+      .container {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "aside section section section"
+          "footer footer footer footer";
+      }
+      #header {
+        grid-area: navbar;
+      }
+      #left {
+        grid-area: aside;
+      }
+      #main {
+        grid-area: section;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      .item {
+        background-color: rgb(191, 249, 132);
+        border: 5px solid rgb(3, 70, 3);
+        padding: 15px 25px;
+        text-align: center;
+      }
+
+      .container1 {
+        margin: 20px;
+        padding: 10px;
+        display: grid;
+        grid-template-areas: 
+        'header header header header header'
+        'main main section section aside'
+        'footer footer footer footer footer'
+        ;
+      }
+      #header1 {
+        grid-area: header;
+      }
+      #main1{grid-area: main;}
+      #aside1{grid-area: aside;}
+      #section1{grid-area: section;}
+      #footer1{grid-area: footer;}
+
+      .class{
+        background-color: rgb(231, 195, 104);
+        border: 5px solid rgb(0, 255, 26);
+        padding: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid in CSS</h1>
+    <div class="container">
+      <div class="item" id="header">Home About Contact Us</div>
+      <div class="item" id="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit in illum
+        error consectetur earum voluptas alias eos nesciunt laborum modi, minima
+        amet vel expedita deleniti recusandae fuga rem! Dicta, amet?
+      </div>
+      <div class="item" id="main">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi eaque
+        eum reprehenderit dolor expedita molestiae, beatae voluptatibus ut
+        provident rerum est corporis quos numquam maxime voluptatum illum earum
+        vel explicabo?
+      </div>
+      <div class="item footer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolores.
+      </div>
+    </div>
+    <div class="container1">
+      <div class="class" id="header1">Home Add Cart Login Contact Us</div>
+      <div class="class" id="main1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore fugiat
+        velit, saepe dolor molestias commodi nostrum magni quidem aliquam sunt
+        officiis perspiciatis assumenda voluptate voluptates alias placeat
+        perferendis rem ipsa modi unde! Cupiditate necessitatibus accusamus,
+        quidem rem id ad eos sunt recusandae impedit enim consectetur nisi rerum
+        quibusdam tempore fugit.
+      </div>
+      <div class="class" id="aside1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt dolorem
+        eveniet repudiandae illum animi harum sed obcaecati incidunt quidem
+        error, temporibus exercitationem odio quibusdam accusantium vero non
+        iste eos provident?
+      </div>
+      <div class="class" id="section1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iste
+        corrupti omnis eos officia porro quos impedit voluptates suscipit,
+        aliquid, aspernatur, perferendis quia error sit.
+      </div>
+      <div class="class" id="footer1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi beatae
+        magni perspiciatis. Doloremque, beatae provident.
+      </div>
+    </div>
+  </body>
+</html>

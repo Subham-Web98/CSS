@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Animetion</title>
+    <style>
+      .grid {
+        display: grid;
+        height: 20em;
+        background-color: black;
+        gap: 0.4rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        transition: 1s;
+        transition-timing-function: ease-in;
+      }
+      :where(.home, .menu, .products, .about) {
+        background-color: rgb(220, 226, 183);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+      }
+      :where(.home, .menu, .products, .about):hover{
+        background-color: rgb(116, 116, 183);
+        color: bisque;
+      }
+      .grid:has(.home:hover){
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      }
+      .grid:has(.menu:hover){
+        grid-template-columns:  1fr 1.5fr 1fr 1fr;
+      }
+      .grid:has(.products:hover){
+        grid-template-columns: 1fr 1fr 1.5fr 1fr;
+      }
+      .grid:has(.about:hover){
+        grid-template-columns:  0fr 0fr 0fr 4fr;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="home">Home</div>
+      <div class="menu">Menu</div>
+      <div class="products">Products</div>
+      <div class="about">About</div>
+    </div>
+  </body>
+</html>

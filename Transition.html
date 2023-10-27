@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transsition in CSS</title>
+    <style>
+      .transition {
+        height: 200px;
+        width: 200px;
+        color: bisque;
+        background-color: rebeccapurple;
+        border-radius: 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transition-property: width; */
+        /* transition-duration: 10s; */
+        /* transition: width 1s , height 1s; */
+        transition: all 2s;
+        /* transition-delay: 0.5s; */
+        /* transition-timing-function: linear; */
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease; */
+        transition-timing-function: ease-out;
+        /* transition-timing-function: ease-in-out; */
+      }
+      .transition:hover {
+        width: 50em;
+        height: 50em;
+        color: rgb(0, 0, 0);
+        background-color: beige;
+        box-shadow: 0 0 1em rgb(40, 39, 39);
+        transform: rotate(-5deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="transition">Transition Effect</div>
+  </body>
+</html>
